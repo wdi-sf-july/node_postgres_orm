@@ -1,4 +1,5 @@
 var Person = require('./person');
+var pg = require('pg');
 
 var Models = {};
 
@@ -15,4 +16,5 @@ Models.Person.findBy("id", 1, function(err, person){
   });
 })
 
+pg.end();
 module.exports = Models;
