@@ -1,7 +1,7 @@
 var express = require('express'),
   bodyParser = require('body-parser'),
   methodOverride = require('method-override'),
-  People = require('./models/main.js').People,
+  Person = require('./models/main.js').Person,
   app = express();
 
 
