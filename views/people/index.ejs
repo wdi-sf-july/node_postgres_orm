@@ -3,16 +3,14 @@
   <head>
   </head>
   <body>
-    Books Index
+    People Index
 
-    <form method="post" action="/books/0?_method=delete">
-      <button> Delete Book 0 </button>
-    </form>
-
-
-    <% books.forEach(function(book){ %>
-      <h2> <%= book.title %> </h2>
-      <p> this is book <%= book.id %> </p>
+    <% people.forEach(function(person){ %>
+      <h2> <%= person.firstname %> </h2>
+      <p> this is person <%= person.id %> </p>
+      <form method="post" action="/people/<%= person.id %>?_method=delete">
+          <button>Delete</button>
+      </form> 
     <% }) %>
   </body>
 </html>

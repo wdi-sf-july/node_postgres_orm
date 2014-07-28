@@ -2,6 +2,7 @@ var pg = require('pg');
 
 var db = {};
 
+
 db.config = {
   database: "social_app",
   host: "localhost",

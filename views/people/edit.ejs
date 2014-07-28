@@ -3,10 +3,10 @@
   <head>
   </head>
   <body>
-    <form method="post" action="/books/<%= book.id %>?_method=put">
-      <input type="text" name="book[title]" value="<%= book.title %>"><br>
+    <form method="post" action="/people/<%= person.id %>?_method=put">
+      <input type="text" name="person[firstname]" value="<%= person.firstname %>"><br>
 
-      <input type="text" name="book[author]" value="<%= book.author %>"><br>
+      <input type="text" name="person[lastname]" value="<%= person.lastname %>"><br>
       <button>SAVE</button>
     </form>
   </body>
